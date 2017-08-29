@@ -218,7 +218,7 @@ public class UpdateAgileAttributes {
 				Map<Integer, String> params = new HashMap<Integer, String>();
 				params.put(ManufacturerPartConstants.ATT_GENERAL_INFO_MANUFACTURER_NAME, dataList[0]);
 				params.put(ManufacturerPartConstants.ATT_GENERAL_INFO_MANUFACTURER_PART_NUMBER, dataList[1]);
-				aglObj = (IDataObject) aglSession.getObject(IItem.OBJECT_TYPE, params);
+				aglObj = (IDataObject) aglSession.getObject(IManufacturerPart.OBJECT_TYPE, params);
 				dataIdx = 2;
 			} else
 				aglObj = (IDataObject) aglSession.getObject(aglObjClass, dataList[0]);
